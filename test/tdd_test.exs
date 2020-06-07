@@ -1,8 +1,8 @@
-defmodule TddTest do
+defmodule RomanTest do
   use ExUnit.Case
-  doctest Tdd
+  doctest Roman
 
-  test "greets the world" do
-    assert Tdd.hello() == :world
+  test "Roman convert number 1 to the string I" do
+    assert Roman.convert(1) == "I"
   end
 end

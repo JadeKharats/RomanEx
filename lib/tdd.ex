@@ -1,18 +1,18 @@
-defmodule Tdd do
+defmodule Roman do
   @moduledoc """
-  Documentation for `Tdd`.
+  Documentation for `Roman`.
   """
 
   @doc """
-  Hello world.
+  Roman.
 
   ## Examples
 
-      iex> Tdd.hello()
-      :world
+      iex> Roman.convert(1)
+      "I"
 
   """
-  def hello do
-    :world
+  def convert(number) do
+    "I"
   end
 end
