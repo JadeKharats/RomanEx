@@ -11,8 +11,15 @@ defmodule Roman do
       iex> Roman.convert(1)
       "I"
 
+      iex> Roman.convert(3)
+      "III"
+
   """
   def convert(number) do
-    "I"
+    if number > 1 do
+      "I" <> convert(number - 1)
+    else
+      "I"
+    end
   end
 end
